@@ -72,6 +72,8 @@ body {
 
 #trees {
     width: 100%;
+    position: relative;
+    animation: desplazamiento 10s linear infinite;
 }
 
 
@@ -119,6 +121,7 @@ body {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(100vh);
     }
@@ -135,5 +138,15 @@ body {
 
     100% {
         transform: translateY(-25px);
+    }
+}
+
+@keyframes desplazamiento {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
     }
 }
