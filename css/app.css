@@ -20,16 +20,31 @@ body {
     background: linear-gradient(#a2000a,#cf0000);
     color: var(--white);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-
 }
+
 
 .countdown {
     text-align: center;
 }
+
+.figure__trees{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+#trees{
+    width: 100%;
+}
+
 
 #timer {
     display: flex;
