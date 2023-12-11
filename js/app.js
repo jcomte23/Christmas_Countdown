@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //carga de nieve
     const snowflakesContainer = document.querySelector(".snowflakes");
-    const cantidadNieve=100
+    const cantidadNieve=200
 
     for (let i = 0; i < cantidadNieve; i++) {
         const snowflake = document.createElement("div");
