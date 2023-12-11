@@ -16,7 +16,6 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     background: linear-gradient(#a2000a, #cf0000);
     color: var(--white);
     display: flex;
@@ -24,35 +23,22 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-
-.countdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 80%;
-}
-
-.figure__santa {
+header{
     position: absolute;
-    display: flex;
-    justify-content: start;
+    z-index: 1;
     width: 100%;
-    height: 100%;
-}
-
-.figure__moon {
-    position: absolute;
+    height: auto;
+    height: 510px ;
     display: flex;
-    justify-content: end;
-    width: 100%;
-    height: 100%;
+    justify-content: space-between;
 }
 
 #santa {
+    width: auto;
+    height: 250px;
     animation: animacionSanta 4s ease-in-out infinite;
 }
 
@@ -61,14 +47,24 @@ body {
     top: -200px;
     right: -200px;
     width: auto;
-    height: 600px;
+    height: 500px;
 }
 
+
+.countdown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 
 #timer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -111,7 +107,9 @@ body {
 /* ========== */
 
 footer {
-    height: 29%;
+    position: absolute;
+    margin-top: 35%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -151,8 +149,6 @@ footer {
         transform: translateY(-25px);
     }
 }
-
-
 
 
 @keyframes move-images {
