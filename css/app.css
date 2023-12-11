@@ -121,7 +121,7 @@ footer {
 }
 
 .footer__figure img {
-    width: 50%;
+    width: 100%;
     height: auto;
     animation: move-images 1s infinite linear;
     animation-fill-mode: forwards;
